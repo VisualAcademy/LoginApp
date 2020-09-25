@@ -5,6 +5,8 @@ namespace Hawaso.Models
 {
     public interface ILoginRepository
     {
+        void Add(Login model); 
+
         /// <summary>
         /// 전체 레코드 수 반환: Answers 테이블의 모든 레코드 수 
         /// </summary>

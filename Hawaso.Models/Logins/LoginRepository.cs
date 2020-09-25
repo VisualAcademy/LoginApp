@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
-namespace Hawaso.Models.Logins
+namespace Hawaso.Models
 {
     public class LoginRepository : ILoginRepository
     {
@@ -14,6 +14,12 @@ namespace Hawaso.Models.Logins
         public LoginRepository(string connectionString)
         {
             db = new SqlConnection(connectionString);
+        }
+
+        public void Add(Login model)
+        {
+            var sql = "Insert Into Logins (UserName, LoginIp) Values (@UserName, @LoginIp); ";
+            db.Execute(sql, model);
         }
 
         /// <summary>

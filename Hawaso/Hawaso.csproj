@@ -11,6 +11,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.0-rc.1.20451.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-rc.1.20451.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-rc.1.20451.13" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-rc.1.20453.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hawaso.Models\Hawaso.Models.csproj" />
   </ItemGroup>
 
 </Project>
